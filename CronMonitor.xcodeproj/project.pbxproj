@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A61415ED639E9556836E7B /* CronJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34837FEF931E8751D725CA28 /* CronJob.swift */; };
+		0D4F7330D0CF0162FD9A304E /* CronMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ACDC2A0CAF3F2DE807FA7 /* CronMonitorApp.swift */; };
+		10C468717FC5BB7247A1730A /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98920AB7CD02CA7B5616DA03 /* DataStoreTests.swift */; };
+		2939125556FA45D04F5CC4EB /* CrontabLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297F8738FF00D2DC6F038A0 /* CrontabLine.swift */; };
+		3DF384A1635621D1A2C3CD4F /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCD9D496CC03068C27B3AD /* JobDetailView.swift */; };
+		451DAD3CCBFF320B8DFDED8C /* CronExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E18768B3C7463D8D83BE4 /* CronExpression.swift */; };
+		4F1779218A787A3848437159 /* CrontabManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596895C5BE3FD792DFB73D53 /* CrontabManagerTests.swift */; };
+		5EDFB622058362F83B9C1072 /* CrontabLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00175589BDAAC18DD4142580 /* CrontabLineTests.swift */; };
+		60231CB1ADD7CD1266EE599F /* PlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368E63F4F1CFDE60E4F3E15 /* PlaceholderTests.swift */; };
+		6AA181C842B179F871862B95 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739D90D5773F61BE5F9A669 /* DataStore.swift */; };
+		6DFCDAA1CFBFDA4C731BD9A9 /* ExecutionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF0B9CF079B4FC0B0FAF6B9 /* ExecutionRecord.swift */; };
+		7063BEF6ED750E05569B5E79 /* CrontabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F12ABA72B6E0373F310130 /* CrontabManager.swift */; };
+		7A251DB4F7111EEC1E24548B /* JobCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532F7C9A25E559B4AC13D916 /* JobCardView.swift */; };
+		8447726B94ADD1D18FD0D4B0 /* WrapperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357D064A9E17C904F5C5479 /* WrapperManager.swift */; };
+		93050C8BD8B5AA9430489D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE12AC86ED56E508E974931 /* Assets.xcassets */; };
+		D0C54F928074B1A0F2D0418F /* AddJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B83E8636E094534AD55DC /* AddJobView.swift */; };
+		D36F6313B19FB93DB8C824A8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D64A9C5A57465F5F10D7E1 /* NotificationManager.swift */; };
+		D5324FDCF753E0A0E23D4B1E /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E3EF2CDB4A7019DFA6630B /* JobListView.swift */; };
+		E2B4088A7CF066844BACAAA2 /* CronExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D4AA17AA9EE9E7F912971 /* CronExpressionTests.swift */; };
+		E5E6EB9E28635A41569A9B3E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D210A77094596A0327B21AE /* AppState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47750A30B1403615A6EAB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0489CA736DB9792B492A6922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 156B03713BF06553C9C96717;
+			remoteInfo = CronMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00175589BDAAC18DD4142580 /* CrontabLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrontabLineTests.swift; sourceTree = "<group>"; };
+		163ACDC2A0CAF3F2DE807FA7 /* CronMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronMonitorApp.swift; sourceTree = "<group>"; };
+		1D210A77094596A0327B21AE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		34837FEF931E8751D725CA28 /* CronJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronJob.swift; sourceTree = "<group>"; };
+		44F12ABA72B6E0373F310130 /* CrontabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrontabManager.swift; sourceTree = "<group>"; };
+		51D64A9C5A57465F5F10D7E1 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		532F7C9A25E559B4AC13D916 /* JobCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardView.swift; sourceTree = "<group>"; };
+		596895C5BE3FD792DFB73D53 /* CrontabManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrontabManagerTests.swift; sourceTree = "<group>"; };
+		6357D064A9E17C904F5C5479 /* WrapperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperManager.swift; sourceTree = "<group>"; };
+		6739D90D5773F61BE5F9A669 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		7368E63F4F1CFDE60E4F3E15 /* PlaceholderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTests.swift; sourceTree = "<group>"; };
+		79CCD9D496CC03068C27B3AD /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		7FE12AC86ED56E508E974931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8297F8738FF00D2DC6F038A0 /* CrontabLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrontabLine.swift; sourceTree = "<group>"; };
+		8DF0B9CF079B4FC0B0FAF6B9 /* ExecutionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionRecord.swift; sourceTree = "<group>"; };
+		98920AB7CD02CA7B5616DA03 /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
+		BB2D4AA17AA9EE9E7F912971 /* CronExpressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronExpressionTests.swift; sourceTree = "<group>"; };
+		C1956CD6398A9F04F416BF1F /* CronMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CronMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22E18768B3C7463D8D83BE4 /* CronExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronExpression.swift; sourceTree = "<group>"; };
+		C37B83E8636E094534AD55DC /* AddJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobView.swift; sourceTree = "<group>"; };
+		D148E61B08D844F0079768DF /* CronMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CronMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E3EF2CDB4A7019DFA6630B /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		29FCE58F6E93B2EFB6C2E4FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44F12ABA72B6E0373F310130 /* CrontabManager.swift */,
+				6739D90D5773F61BE5F9A669 /* DataStore.swift */,
+				51D64A9C5A57465F5F10D7E1 /* NotificationManager.swift */,
+				6357D064A9E17C904F5C5479 /* WrapperManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		721D3F3277B52A6C4EB72372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1956CD6398A9F04F416BF1F /* CronMonitor.app */,
+				D148E61B08D844F0079768DF /* CronMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E8F9FA8CF58906F7D522DC /* CronMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D4AA17AA9EE9E7F912971 /* CronExpressionTests.swift */,
+				00175589BDAAC18DD4142580 /* CrontabLineTests.swift */,
+				596895C5BE3FD792DFB73D53 /* CrontabManagerTests.swift */,
+				98920AB7CD02CA7B5616DA03 /* DataStoreTests.swift */,
+				7368E63F4F1CFDE60E4F3E15 /* PlaceholderTests.swift */,
+			);
+			name = CronMonitorTests;
+			path = Tests/CronMonitorTests;
+			sourceTree = "<group>";
+		};
+		8B1B4C5FC4357F9A3F5990AF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1D210A77094596A0327B21AE /* AppState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93B687F71EE34787B71B505F /* CronMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				7FE12AC86ED56E508E974931 /* Assets.xcassets */,
+				163ACDC2A0CAF3F2DE807FA7 /* CronMonitorApp.swift */,
+				CA70FB2E3197FF552B4E3C10 /* Models */,
+				29FCE58F6E93B2EFB6C2E4FB /* Services */,
+				8B1B4C5FC4357F9A3F5990AF /* ViewModels */,
+				E9A18F90F10C0323B5A2BF2D /* Views */,
+			);
+			name = CronMonitor;
+			path = Sources/CronMonitor;
+			sourceTree = "<group>";
+		};
+		A13024753C3C2C4327C9715C = {
+			isa = PBXGroup;
+			children = (
+				93B687F71EE34787B71B505F /* CronMonitor */,
+				80E8F9FA8CF58906F7D522DC /* CronMonitorTests */,
+				721D3F3277B52A6C4EB72372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA70FB2E3197FF552B4E3C10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C22E18768B3C7463D8D83BE4 /* CronExpression.swift */,
+				34837FEF931E8751D725CA28 /* CronJob.swift */,
+				8297F8738FF00D2DC6F038A0 /* CrontabLine.swift */,
+				8DF0B9CF079B4FC0B0FAF6B9 /* ExecutionRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9A18F90F10C0323B5A2BF2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C37B83E8636E094534AD55DC /* AddJobView.swift */,
+				532F7C9A25E559B4AC13D916 /* JobCardView.swift */,
+				79CCD9D496CC03068C27B3AD /* JobDetailView.swift */,
+				D5E3EF2CDB4A7019DFA6630B /* JobListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		156B03713BF06553C9C96717 /* CronMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E906F5A02E077497365BAAC /* Build configuration list for PBXNativeTarget "CronMonitor" */;
+			buildPhases = (
+				326F53623C5CAA408AFBC98C /* Sources */,
+				342794BD0329FB5E0B8B6136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CronMonitor;
+			packageProductDependencies = (
+			);
+			productName = CronMonitor;
+			productReference = C1956CD6398A9F04F416BF1F /* CronMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CD3F8F1B6DCADCF4EB3B79C /* CronMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFC84B82806C4C83A991ADE /* Build configuration list for PBXNativeTarget "CronMonitorTests" */;
+			buildPhases = (
+				0C42C3D1E8196D6DB6C1D9AA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A4A51B4020B512C1CA9B62A /* PBXTargetDependency */,
+			);
+			name = CronMonitorTests;
+			packageProductDependencies = (
+			);
+			productName = CronMonitorTests;
+			productReference = D148E61B08D844F0079768DF /* CronMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0489CA736DB9792B492A6922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					156B03713BF06553C9C96717 = {
+						ProvisioningStyle = Manual;
+					};
+					6CD3F8F1B6DCADCF4EB3B79C = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F116B79C8E277E7F477FD248 /* Build configuration list for PBXProject "CronMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A13024753C3C2C4327C9715C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				156B03713BF06553C9C96717 /* CronMonitor */,
+				6CD3F8F1B6DCADCF4EB3B79C /* CronMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342794BD0329FB5E0B8B6136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93050C8BD8B5AA9430489D76 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C42C3D1E8196D6DB6C1D9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B4088A7CF066844BACAAA2 /* CronExpressionTests.swift in Sources */,
+				5EDFB622058362F83B9C1072 /* CrontabLineTests.swift in Sources */,
+				4F1779218A787A3848437159 /* CrontabManagerTests.swift in Sources */,
+				10C468717FC5BB7247A1730A /* DataStoreTests.swift in Sources */,
+				60231CB1ADD7CD1266EE599F /* PlaceholderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326F53623C5CAA408AFBC98C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C54F928074B1A0F2D0418F /* AddJobView.swift in Sources */,
+				E5E6EB9E28635A41569A9B3E /* AppState.swift in Sources */,
+				451DAD3CCBFF320B8DFDED8C /* CronExpression.swift in Sources */,
+				07A61415ED639E9556836E7B /* CronJob.swift in Sources */,
+				0D4F7330D0CF0162FD9A304E /* CronMonitorApp.swift in Sources */,
+				2939125556FA45D04F5CC4EB /* CrontabLine.swift in Sources */,
+				7063BEF6ED750E05569B5E79 /* CrontabManager.swift in Sources */,
+				6AA181C842B179F871862B95 /* DataStore.swift in Sources */,
+				6DFCDAA1CFBFDA4C731BD9A9 /* ExecutionRecord.swift in Sources */,
+				7A251DB4F7111EEC1E24548B /* JobCardView.swift in Sources */,
+				3DF384A1635621D1A2C3CD4F /* JobDetailView.swift in Sources */,
+				D5324FDCF753E0A0E23D4B1E /* JobListView.swift in Sources */,
+				D36F6313B19FB93DB8C824A8 /* NotificationManager.swift in Sources */,
+				8447726B94ADD1D18FD0D4B0 /* WrapperManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A4A51B4020B512C1CA9B62A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 156B03713BF06553C9C96717 /* CronMonitor */;
+			targetProxy = A47750A30B1403615A6EAB90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D7B3F348131A8BFB2926566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		66167A3382E42A068EBF62A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A9FE8811F861DEAA7EA63A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.cronmonitor.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CronMonitor.app/Contents/MacOS/CronMonitor";
+			};
+			name = Debug;
+		};
+		9E346ACA62E0EB4D6A1F4AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.cronmonitor.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CronMonitor.app/Contents/MacOS/CronMonitor";
+			};
+			name = Release;
+		};
+		B753E5D437A3DC228AAA6B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.cronmonitor;
+				PRODUCT_NAME = CronMonitor;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		CFD2666E3B1CDE5EC0AEDC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.cronmonitor;
+				PRODUCT_NAME = CronMonitor;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BFC84B82806C4C83A991ADE /* Build configuration list for PBXNativeTarget "CronMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9FE8811F861DEAA7EA63A0 /* Debug */,
+				9E346ACA62E0EB4D6A1F4AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E906F5A02E077497365BAAC /* Build configuration list for PBXNativeTarget "CronMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B753E5D437A3DC228AAA6B91 /* Debug */,
+				CFD2666E3B1CDE5EC0AEDC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F116B79C8E277E7F477FD248 /* Build configuration list for PBXProject "CronMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7B3F348131A8BFB2926566 /* Debug */,
+				66167A3382E42A068EBF62A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0489CA736DB9792B492A6922 /* Project object */;
+}
