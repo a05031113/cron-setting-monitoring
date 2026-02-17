@@ -2,13 +2,14 @@ import SwiftUI
 
 @main
 struct CronMonitorApp: App {
+    @StateObject private var appState = AppState()
+
     var body: some Scene {
-        MenuBarExtra("CronMonitor", systemImage: "clock") {
-            Text("CronMonitor is running")
-            Divider()
-            Button("Quit") {
-                NSApplication.shared.terminate(nil)
-            }
+        MenuBarExtra {
+            JobListView(appState: appState)
+        } label: {
+            Image(systemName: appState.hasFailures ? "clock.badge.exclamationmark" : "clock")
         }
+        .menuBarExtraStyle(.window)
     }
 }
