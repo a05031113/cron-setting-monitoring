@@ -15,6 +15,9 @@ final class AppState: ObservableObject {
     let dataStore: DataStore
     let crontabManager: CrontabManager
 
+    private var pollingTimer: Timer?
+    private var previousFailureIDs: Set<UUID> = []
+
     init(dataStore: DataStore = DataStore(), crontabManager: CrontabManager = CrontabManager()) {
         self.dataStore = dataStore
         self.crontabManager = crontabManager
@@ -85,6 +88,64 @@ final class AppState: ObservableObject {
         }
 
         loadAll()
+    }
+
+    // MARK: - Polling
+
+    /// Start polling for new execution records at the given interval.
+    func startPolling(interval: TimeInterval = 30) {
+        stopPolling()
+
+        // Snapshot current failure IDs so we only notify on truly new failures.
+        previousFailureIDs = currentFailureIDs()
+
+        pollingTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                self?.checkForNewExecutions()
+            }
+        }
+    }
+
+    /// Stop the polling timer.
+    func stopPolling() {
+        pollingTimer?.invalidate()
+        pollingTimer = nil
+    }
+
+    /// Reload execution data and send notifications for any newly detected failures.
+    private func checkForNewExecutions() {
+        let oldFailureIDs = previousFailureIDs
+
+        loadAll()
+
+        let newFailureIDs = currentFailureIDs()
+        let brandNewFailures = newFailureIDs.subtracting(oldFailureIDs)
+
+        for failureID in brandNewFailures {
+            // Find the execution record and its job to send a notification.
+            for (jobId, records) in executions {
+                if let record = records.first(where: { $0.id == failureID }),
+                   let job = jobs.first(where: { $0.id == jobId }) {
+                    NotificationManager.shared.sendFailureNotification(
+                        jobName: job.name,
+                        exitCode: record.exitCode
+                    )
+                }
+            }
+        }
+
+        previousFailureIDs = newFailureIDs
+    }
+
+    /// Collect IDs of all execution records that represent failures.
+    private func currentFailureIDs() -> Set<UUID> {
+        var ids = Set<UUID>()
+        for (_, records) in executions {
+            for record in records where !record.isSuccess {
+                ids.insert(record.id)
+            }
+        }
+        return ids
     }
 
     // MARK: - Private Helpers
