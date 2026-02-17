@@ -62,7 +62,7 @@ struct JobListView: View {
                         }
                     }
                 }
-                .frame(maxHeight: 400)
+                .frame(maxWidth: .infinity)
             }
 
             Divider()
@@ -78,16 +78,11 @@ struct JobListView: View {
                 .buttonStyle(.borderless)
 
                 Spacer()
-
-                Button("Quit") {
-                    NSApplication.shared.terminate(nil)
-                }
-                .buttonStyle(.borderless)
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
         }
-        .frame(width: 360)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
             appState.loadAll()
         }

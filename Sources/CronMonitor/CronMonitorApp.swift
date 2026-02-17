@@ -9,12 +9,12 @@ struct CronMonitorApp: App {
     }
 
     var body: some Scene {
-        MenuBarExtra {
+        WindowGroup {
             JobListView(appState: appState)
                 .onAppear { appState.startPolling() }
-        } label: {
-            Image(systemName: appState.hasFailures ? "clock.badge.exclamationmark" : "clock")
+                .frame(minWidth: 400, minHeight: 500)
         }
-        .menuBarExtraStyle(.window)
+        .windowStyle(.titleBar)
+        .defaultSize(width: 450, height: 600)
     }
 }
